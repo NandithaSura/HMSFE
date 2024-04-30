@@ -50,6 +50,7 @@ export class PatientBillingComponent implements OnInit {
       (data: any) => {
         console.log('Bill created successfully:', data);
         this.resetForm();
+        this.loadData()
       },
       (error) => {
         console.error('Error creating bill:', error);

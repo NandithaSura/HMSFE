@@ -1,13 +1,19 @@
-<div class="menu-container">
-  <h5 routerLink="/patients" class="menu-item">Patient Data</h5>
-  <h5 routerLink="/prescriptions" class="menu-item">Patients Prescriptions</h5>
-  <h5 routerLink="/medicalRecord" class="menu-item">Medical Records</h5>
-  <h5 *ngIf="show" routerLink="/alldoctors" class="menu-item">Doctors</h5>
-  <!-- <h5 *ngIf="show" routerLink="/allmedicalrecords" class="menu-item">Medical Records</h5> -->
-  <h5 *ngIf="show" routerLink="/allbillings" class="menu-item">Billings</h5>
-  <h5 *ngIf="show" routerLink="/allnurses" class="menu-item">Department</h5>
-  <h5 *ngIf="show" routerLink="/allAppointments" class="menu-item">Appointment</h5>
-  <h5 routerLink="/doctorAppointments" class="menu-item">Appointment</h5>
-  <h5 routerLink="/doctortestResults" class="menu-item">test results</h5>
-  <h5 routerLink="/doctorSurgery" class="menu-item">Surgeries</h5>
+<div class="container">
+  <img src="https://bswh-p-001.sitecorecontenthub.cloud/api/public/content/1008f4014fb4484b80a553086e45d29e?v=2a1bb1e0" alt="" class="img">
+  <div class="menu-container">
+    <h5 routerLink="/patients" class="menu-item">Patient Data</h5>
+    <h5 routerLink="/prescriptions" class="menu-item">Patients Prescriptions</h5>
+    <h5 routerLink="/medicalRecord" class="menu-item">Medical Records</h5>
+    <h5 *ngIf="show" routerLink="/alldoctors" class="menu-item">Doctors</h5>
+    <!-- <h5 *ngIf="show" routerLink="/allmedicalrecords" class="menu-item">Medical Records</h5> -->
+    <h5 *ngIf="show" routerLink="/allbillings" class="menu-item">Billings</h5>
+    <h5 *ngIf="show" routerLink="/allnurses" class="menu-item">Department</h5>
+    <h5 *ngIf="show" routerLink="/allAppointments" class="menu-item">Appointment</h5>
+    <h5 *ngIf="show" routerLink="/adminsurgery" class="menu-item">Surgery</h5>
+    <h5 *ngIf="show" routerLink="/adminLabresults" class="menu-item">Lab Results</h5>
+    <h5 *ngIf= "showdoc" routerLink="/doctorAppointments" class="menu-item">Appointment</h5>
+    <h5 *ngIf= "showdoc" routerLink="/doctortestResults" class="menu-item">test results</h5>
+    <h5 *ngIf= "showdoc" routerLink="/doctorSurgery" class="menu-item">Surgeries</h5>
+    <h5 *ngIf= "show" routerLink="/getallrooms" class="menu-item">Rooms</h5>
+  </div>  
 </div>

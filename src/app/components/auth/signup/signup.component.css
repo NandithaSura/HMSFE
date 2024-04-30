@@ -1,16 +1,24 @@
 .signup-form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin: auto;
+  max-width: 500px; /* Adjust width as needed */
+  margin: 2rem auto; /* Centers the form in the middle of the page */
+  padding: 20px; /* Adds padding inside the form */
+  background: #FFFFFF; /* Sets a white background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  border-radius: 8px; /* Rounds the corners of the form box */
+}
+
+.center {
+  text-align: center;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Ensures there's space between form groups */
 }
 
 .form-group label {
-  font-weight: bold;
+  font-weight: bold; /* Makes labels bold */
 }
 
 .form-group input[type="text"],
@@ -19,56 +27,70 @@
 .form-group input[type="date"],
 .form-group textarea,
 .form-group select {
-  width: 100%;
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  width: 100%; /* Ensures form controls take up 100% of the form-group's width */
+  padding: 8px; /* Adds padding inside the form controls */
+  font-size: 16px; /* Sets a readable font size */
+  border: 1px solid #ccc; /* Adds a subtle border */
+  border-radius: 4px; /* Rounds the corners of form controls */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 }
 
 .form-group select {
-  appearance: none; /* Remove default arrow for select */
+  appearance: none; /* Removes default system appearance from select dropdown */
 }
 
 .form-group textarea {
-  height: 100px; /* Adjust height as needed */
+  height: 100px; /* Sets a fixed height for textareas */
 }
 
 button[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  width: 100%; /* Makes the submit button extend the full width of the form */
+  padding: 10px; /* Adds padding for better clickability */
+  font-size: 16px; /* Sets font size */
+  background-color: #4CAF50; /* Sets a green background color */
+  color: white; /* Sets text color to white */
+  border: none; /* Removes border */
+  border-radius: 4px; /* Rounds button corners */
+  cursor: pointer; /* Shows a pointer cursor when hovering over the button */
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #45a049; /* Darkens the button slightly on hover */
 }
 
-
-
-.a{
-  display: flex;
+.d-flex {
+  display: flex; /* Enables flexible box layouts */
+  justify-content: between; /* Distributes space between flex items */
 }
+
+.btn-flex {
+  width: max-content; /* Makes the button only as wide as its content */
+  font-weight: 600; /* Makes the font weight bold */
+}
+
+.no-wrap {
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides overflowed content */
+  text-overflow: ellipsis; /* Adds an ellipsis to truncated content */
+}
+
+.a {
+  display: flex; /* Enables flexible box layout */
+  justify-content: space-between; /* Distributes space between links */
+}
+
 a {
-  text-decoration: none;
-  color: #333;
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid #333;
-  border-radius: 4px;
-  width: 100px;
-  text-align: center;
-  background-color: #fff;
-  transition: background-color 0.3s ease;
+  text-decoration: none; /* Removes underline from links */
+  color: #333; /* Sets text color */
+  padding: 10px; /* Adds padding */
+  margin: 10px; /* Adds margin */
+  border: 1px solid #333; /* Adds border */
+  border-radius: 4px; /* Rounds corners of links */
+  background-color: #fff; /* Sets background color to white */
+  transition: background-color 0.3s, color 0.3s; /* Animates background and text color changes */
 }
 
 a:hover {
-  background-color: #333;
-  color: #fff;
+  background-color: #333; /* Changes background color on hover */
+  color: #fff; /* Changes text color on hover */
 }

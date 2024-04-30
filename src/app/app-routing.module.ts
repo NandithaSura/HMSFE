@@ -23,6 +23,9 @@ import { LabResultsComponent } from './components/patient/lab-results/lab-result
 import { DoctorLabResultsComponent } from './components/doctor/doctor-lab-results/doctor-lab-results.component';
 import { SurgerydoctorComponent } from './components/doctor/surgerydoctor/surgerydoctor.component';
 import { SurgerypatientComponent } from './components/patient/surgerypatient/surgerypatient.component';
+import { AdminsurgeryComponent } from './components/admin/adminsurgery/adminsurgery.component';
+import { LabresultsComponentadmin } from './components/admin/labresults/labresults.component';
+import { RoomsComponent } from './components/doctor/rooms/rooms.component';
 
 const routes: Routes = [
   { path: '', component: SignupComponent },
@@ -49,6 +52,9 @@ const routes: Routes = [
   { path: 'patientBilling', component: PatientBillingComponent},
   { path: 'patientLabResults', component: LabResultsComponent},
   { path: 'patientSurgery', component: SurgerypatientComponent},
+  { path: 'adminsurgery', component: AdminsurgeryComponent},
+  { path: 'adminLabresults', component: LabresultsComponentadmin},
+  { path: 'getallrooms', component: RoomsComponent},
 ];
 
 @NgModule({

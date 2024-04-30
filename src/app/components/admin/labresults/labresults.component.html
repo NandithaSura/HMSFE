@@ -1,0 +1,11 @@
+<div *ngFor="let result of labresults">
+    <div class="result-item">
+      <p><strong>Result ID:</strong> {{ result.ResultID }}</p>
+      <p><strong>Test ID:</strong> {{ result.TestID }}</p>
+      <p><strong>Patient ID:</strong> {{ result.PatientID }}</p>
+      <p><strong>Doctor ID:</strong> {{ result.DoctorID }}</p>
+      <p><strong>Result Details:</strong> {{ result.ResultDetails }}</p>
+      <p><strong>Result Date:</strong> {{ result.ResultDate | date }}</p>
+    </div>
+  </div>
+  

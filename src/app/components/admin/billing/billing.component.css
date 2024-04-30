@@ -32,7 +32,7 @@
   text-align: center;
 }
 
-.form-group {
+.form-group,.form-group select {
   margin-bottom: 15px;
 }
 

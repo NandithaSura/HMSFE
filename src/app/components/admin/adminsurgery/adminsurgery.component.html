@@ -1,0 +1,12 @@
+<div *ngFor="let surgery of surgeries">
+    <div class="surgery-item">
+      <p><strong>Surgery ID:</strong> {{ surgery.SurgeryID }}</p>
+      <p><strong>Room ID:</strong> {{ surgery.RoomID }}</p>
+      <p><strong>Doctor ID:</strong> {{ surgery.DoctorID }}</p>
+      <p><strong>Status:</strong> {{ surgery.Status }}</p>
+      <p><strong>Surgery Date:</strong> {{ surgery.SurgeryDate | date }}</p>
+      <p><strong>Surgery Type:</strong> {{ surgery.SurgeryType }}</p>
+      <p><strong>Patient ID:</strong> {{ surgery.PatientID }}</p>
+    </div>
+  </div>
+  

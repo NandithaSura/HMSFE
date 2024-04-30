@@ -6,16 +6,20 @@
       <input type="text" id="patientID" name="patientID" [(ngModel)]="newBilling.PatientID" required>
     </div>
     <div class="form-group">
-      <label for="patientName">Patient Name:</label>
-      <input type="text" id="patientName" name="patientName" [(ngModel)]="newBilling.PatientName" required>
-    </div>
-    <div class="form-group">
       <label for="totalAmount">Total Amount:</label>
       <input type="text" id="totalAmount" name="totalAmount" [(ngModel)]="newBilling.TotalAmount" required>
     </div>
     <div class="form-group">
       <label for="paymentStatus">Payment Status:</label>
-      <input type="text" id="paymentStatus" name="paymentStatus" [(ngModel)]="newBilling.PaymentStatus" required>
+      <select
+        id="paymentStatus"
+        name="paymentStatus"
+        [(ngModel)]="newBilling.PaymentStatus"
+        required
+      >
+        <option value="Paid">Paid</option>
+        <option value="Pending">Pending</option>
+      </select>
     </div>
     <div class="form-group">
       <label for="billDate">Bill Date:</label>

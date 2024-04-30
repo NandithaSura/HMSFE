@@ -134,4 +134,15 @@ export class AuthService {
     return this.http.get(this.base_Url + `surgery/doctor/${id}`)
   }
 
+  getallSurgeryDetails():Observable<any>{
+    return this.http.get(this.base_Url + 'surgery')
+  }
+
+  getalltestresults():Observable<any>{
+    return this.http.get(this.base_Url + 'testResult')
+  }
+  getallrooms():Observable<any>{
+    return this.http.get(this.base_Url+"room")
+  }
+
 }

@@ -28,6 +28,9 @@ import { DoctorappointmentsComponent } from './components/doctor/doctorappointme
 import { DoctorLabResultsComponent } from './components/doctor/doctor-lab-results/doctor-lab-results.component';
 import { SurgerydoctorComponent } from './components/doctor/surgerydoctor/surgerydoctor.component';
 import { SurgerypatientComponent } from './components/patient/surgerypatient/surgerypatient.component';
+import { AdminsurgeryComponent } from './components/admin/adminsurgery/adminsurgery.component';
+import { LabresultsComponentadmin } from './components/admin/labresults/labresults.component';
+import { RoomsComponent } from './components/doctor/rooms/rooms.component';
 
 
 @NgModule({
@@ -56,6 +59,9 @@ import { SurgerypatientComponent } from './components/patient/surgerypatient/sur
     DoctorLabResultsComponent,
     SurgerydoctorComponent,
     SurgerypatientComponent,
+    AdminsurgeryComponent,
+    LabresultsComponentadmin,
+    RoomsComponent,
   ],
   imports: [
     BrowserModule,

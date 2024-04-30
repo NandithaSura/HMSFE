@@ -1,6 +1,6 @@
 <div class="form-container">
   <form (ngSubmit)="onSubmit()" >
-    <h1>Doctor Login</h1>
+    <h1>Doctor/Admin Login</h1>
     <div>
       <label for="email">Email:</label>
       <input type="email" required placeholder="Enter your email" [(ngModel)]="doctor.Email" name="Email">
@@ -11,8 +11,9 @@
     </div>
     <button type="submit">Login</button>
     <div class="a">
-      <a routerLink="/doctorSignup">doctor signup</a>
+      <a routerLink="/login">patient login</a>
       <a routerLink="/">patient signup</a>
+      <a routerLink="/doctorSignup">doctor signUp</a>  
     </div>
 
   </form>
