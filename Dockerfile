@@ -1,23 +1,25 @@
-# Use Node.js 16 slim as the base image
 FROM node:16-slim
 
-# Set the working directory
+# Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the working directory
+# Copy only package files first for caching
 COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the application code
+# 🔧 Install Angular CLI globally
+RUN npm install -g @angular/cli
+
+# Copy remaining source code
 COPY . .
 
-# Build the React app
+# Build the Angular app
 RUN npm run build
 
-# Expose port 3000 (or the port your app is configured to listen on)
+# Expose the port (optional)
 EXPOSE 3000
 
-# Start your Node.js server (assuming it serves the React app)
+# Start the app (optional)
 CMD ["npm", "start"]
